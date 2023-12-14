@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaya's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile-img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+            /* To make the image circular */
+            margin: 20px auto;
+            display: block;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        .project {
+            margin-bottom: 40px;
+            background-color: #ddf7b4;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        /*.project img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }*/
+
+        .review {
+            background-color: #acecce;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        /* CSS for animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fadeIn {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Add some color and animation to GIFs */
+        .animated-gif {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .animated-gif img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /*  .animated-gif:after {
+            content: 'GIF';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px;
+            background-color: #e74c3c;
+            color: #fff;
+            font-size: 12px;
+            border-radius: 3px;
+            font-weight: bold;
+        }*/
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Jaya's Portfolio</h1>
+        <!-- Add John's profile image from S3 bucket -->
+        <img src="https://myterraformprojectwebsite14-23.s3.amazonaws.com/profile.png" alt="Jaya's Profile"
+            class="profile-img">
+    </header>
+
+    <section>
+        <h2>Projects</h2>
+
+        <div class="project fadeIn">
+            <!--<img src="project1.jpg" alt="Project 1"> -->
+            <h3>Project 1: Automated deployment of WAR File to Tomcat Server through CI/CD Pipeline</h3>
+            <p>Description of the Project.</p>
+            <p>This project focuses on implementing a robust Continuous Integration and Continuous Deployment (CI/CD)
+                pipeline using tools like Git, Jenkins, Dockerfile, and Maven within the AWS Cloud environment.</p>
+        </div>
+
+        <div class="project fadeIn">
+            <!-- <img src="project2.jpg" alt="Project 2"> -->
+            <h3>Project 2: Deploying our application securely in an Ec2 instance</h3>
+            <p>Description of Project 2.</p>
+            <p>This project demonstrates how to create a VPC to secure our application within a VPC so that we can use
+                it for servers in a production environment.</p>
+        </div>
+
+        <!-- Example of an animated GIF with color and animation -->
+        <!-- <div class="animated-gif fadeIn">
+            <img src="animated.gif" alt="Animated GIF">
+        </div> -->
+    </section>
+
+    <section>
+        <h2>Reviews</h2>
+
+        <div class="review fadeIn">
+            <h3>Client 1</h3>
+            <p>"Jaya did an excellent job on our project. His attention to detail and creativity were outstanding."</p>
+        </div>
+
+        <div class="review fadeIn">
+            <h3>Client 2</h3>
+            <p>"Working with Jaya was a pleasure. He delivered high-quality work on time and exceeded our expectations."
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>
